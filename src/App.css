@@ -1,0 +1,249 @@
+/* CSS cho việc căn giữa nội dung */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.Todo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.Todo.completed span {
+  text-decoration: line-through;
+}
+
+.Todo input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.Todo span {
+  flex: 1;
+}
+
+.Todo-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.Todo-buttons button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.Todo-buttons .edit:hover {
+  color: #007bff;
+}
+
+.Todo-buttons .delete:hover {
+  color: #dc3545;
+}
+
+p {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.confirm-box h2 {
+  margin-top: 0;
+}
+
+.confirm-box p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.confirm-buttons button:hover {
+  opacity: 0.8;
+}
+
+.confirm-buttons button:first-of-type {
+  background-color: #6c757d;
+  color: white;
+}
+
+.confirm-buttons button:last-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.update-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.update-box h2 {
+  margin-top: 0;
+}
+
+.update-box label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.update-box input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.update-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.update-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.update-buttons button:hover {
+  opacity: 0.8;
+}
+
+.update-buttons button:first-of-type {
+  background-color: #6c757d;
+  color: white;
+}
+
+.update-buttons button:last-of-type {
+  background-color: #007bff;
+  color: white;
+}
+.todo-input {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.complice label {
+  text-decoration: line-through;
+  color: #e70c0c;
+}
